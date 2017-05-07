@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('characters', ['as' => 'characters', function() {
+    return view('characters');
+}]);
